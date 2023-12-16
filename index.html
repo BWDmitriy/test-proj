@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/test-proj/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vanilla App Template</title>
+    
+    <script type="module" crossorigin src="/test-proj/commonHelpers.js"></script>
+    <link rel="stylesheet" href="/test-proj/assets/index-fbabb9aa.css">
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/test-proj/favicon.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vanilla App Template</title>
-  
-  <script type="module" crossorigin src="/test-proj/commonHelpers.js"></script>
-  <link rel="stylesheet" href="/test-proj/assets/index-08c38ad1.css">
-</head>
-
-<body>
-  <header class="header">
+  <body>
+    <header class="header">
   <nav class="nav">
     <ul class="nav-list">
       <li class="nav-item">
@@ -26,17 +25,61 @@
   </nav>
 </header>
 
-  <section>
+    <section>
     <h1 class="heading-one">This is section 1!</h1>
 </section>
-  <section>
-    <h1>Lorem ipsum dolor sit amet.</h1>
-    <!-- Path to images as from index.html file -->
-    <img src="/test-proj/assets/javascript-8dac5379.svg" alt="" />
-  </section>
+    <section class="section-img">
+      <h2>Контентні зображення в HTML</h2>
+      <ul class="img-grid">
+        <li>
+          <p>Шлях з ../img/section-img.jpg</p>
+          <img src="../img/section-img.jpg" alt="cat" width="500" />
+        </li>
+        <li>
+          <p>Шлях з ./img/section-img.jpg</p>
+          <img src="/test-proj/assets/section-img-793af098.jpg" alt="cat" width="500" />
+        </li>
+        <li>
+          <p>Шлях з /img/section-img.jpg</p>
+          <img src="/test-proj/assets/section-img-793af098.jpg" alt="cat" width="500" />
+        </li>
+        <li>
+          <p>Шлях з img/section-img.jpg</p>
+          <img src="/test-proj/assets/section-img-793af098.jpg" alt="cat" width="500" />
+        </li>
+      </ul>
+      <br />
 
-  <!-- Loads the specified .html file -->
-  <section class="vite-promo">
+      <h2>Фонові зображення в CSS</h2>
+
+      <ul class="img-grid">
+        <li>
+          <p>Шлях з ../img/section-img.jpg</p>
+          <div class="img-bg img-bg-1"></div>
+        </li>
+        <li>
+          <p>Шлях з ./img/section-img.jpg</p>
+          <div class="img-bg img-bg-2"></div>
+        </li>
+        <li>
+          <p>Шлях з /img/section-img.jpg</p>
+          <div class="img-bg img-bg-3"></div>
+        </li>
+        <li>
+          <p>Шлях з img/section-img.jpg</p>
+          <div class="img-bg img-bg-4"></div>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h1>Lorem ipsum dolor sit amet.</h1>
+      <!-- Path to images as from index.html file -->
+      <img src="/test-proj/assets/javascript-8dac5379.svg" alt="" />
+    </section>
+
+    <!-- Loads the specified .html file -->
+    <section class="vite-promo">
   <div class="container">
     <div class="wrapper">
       <h2 class="title">
@@ -84,7 +127,6 @@
 </section>
 
 
-  
-</body>
-
+    
+  </body>
 </html>
