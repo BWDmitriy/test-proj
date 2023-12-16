@@ -1,0 +1,29 @@
+.img-grid {
+  display: flex;
+  gap: 24px;
+}
+
+.img-bg {
+  width: 346px;
+  height: 230px;
+  background-color: teal;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.img-bg-1 {
+  background-image: url(../img/section-img.jpg);
+}
+
+.img-bg-2 {
+  background-image: url(./img/section-img.jpg);
+}
+
+.img-bg-3 {
+  background-image: url(/img/section-img.jpg);
+}
+
+.img-bg-4 {
+  background-image: url(img/section-img.jpg);
+}
