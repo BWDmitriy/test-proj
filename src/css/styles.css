@@ -10,6 +10,7 @@
 @import url('./section1.css');
 @import url('./section-img');
 @import url('./modal');
+@import url('./section_new.css');
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;

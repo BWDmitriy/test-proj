@@ -1,0 +1,13 @@
+.section-new {
+  width: 768px;
+  height: 600px;
+  background-color: blue;
+}
+.s-n-titles {
+  color: beige;
+  font-size: 48px;
+}
+.s-n-text {
+  color: aquamarine;
+  font-size: 36px;
+}
